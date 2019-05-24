@@ -1,0 +1,131 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="Registrarse y seleccionar si eres Profesor o Estudiante"
+        android:textColor="#ffff"
+        android:layout_alignStart="@+id/nombre"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/nombre"
+        android:hint="Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="8dp"
+        android:background="#FFFF" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="8dp"
+        android:background="#fff"
+        android:hint="Apellido"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/nombre" />
+
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="8dp"
+        android:background="#fff"
+        android:hint="usuario"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/apellido" />
+    <EditText
+        android:id="@+id/Mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="8dp"
+        android:background="#fff"
+        android:hint="Mail"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/usuario" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="8dp"
+        android:background="#fff"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        android:layout_below ="@+id/Mail" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profesor"
+        android:id="@+id/txtprofe"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/password"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbtnprofe"
+        android:layout_alignBaseline="@+id/txtprofe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="19dp"
+        android:layout_above="@+id/rbtnestudiante"
+        android:layout_toRightOf="@+id/txtprofe"
+        android:buttonTint="@color/colorAccent"
+        android:shadowColor="#fff" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estudiante"
+        android:id="@+id/txtestudiante"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/txtprofe"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbtnestudiante"
+        android:layout_alignBaseline="@+id/txtestudiante"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/txtestudiante"
+        android:buttonTint="#ffff"
+        android:shadowColor="#fff" />
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:textColor="#00CC99"
+        android:layout_below="@+id/txtestudiante"
+        android:layout_marginTop="17dp"
+        android:layout_alignStart="@+id/password"
+        android:layout_alignEnd="@+id/password" />
+
+
+</RelativeLayout>
